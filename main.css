@@ -1,0 +1,227 @@
+.contenedor {
+    display: grid;
+    margin: 0px;
+    border: 0px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+    background-image: url(images/background.png);
+}
+.header {
+    grid-area: header;
+    background-color: #47ACF5;
+    background-image: url(images/hyf.png);
+    display: flex;
+    padding-bottom: 1px;
+    padding-top: 0px;
+}
+.main {
+    grid-area: main;
+    background-color: #7fb8e0;
+    background-image: url(images/hyf.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer {
+    grid-area: footer;
+    display: flex;
+    background-color: #a9c5da;
+    background-image: url(images/hyf.png);
+    text-align: center;
+    justify-content: center;
+}
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+.redes {
+    padding-top: 10px;
+    padding-left: 200px;
+}
+.duki {
+    color: black;
+}
+.container-fluid  {
+    grid-area: header;
+    background-color: #47ACF5;
+    background-image: url(images/hyf.png);
+    display: flex;
+}
+.nav-link {
+    color: white;
+    border: 10px;
+}
+.navbar {
+    padding-bottom: 1px;
+    padding-top: 0px;
+}
+.btn-outline-success {
+    color: white;
+    border-color: white;
+}
+.nav-link:hover {
+    color: black;
+}
+.btn-outline-success:hover {
+    background-color: #7fb8e0;
+    border-color: #7fb8e0;
+}
+.titulo {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.subirclip {
+    display: flexbox;
+    
+}
+.subircliplist {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.subircliptitle{
+    text-align: center;
+}
+.micanal {
+    display: flexbox;
+}
+.micanaltitle{
+    text-align: center;
+}
+.micanallist {
+    list-style-type: none;
+    text-align: center;
+}
+.misclips {
+    font-size: 30px;
+}
+.guard {
+    text-align: center;
+    list-style-type: none;
+    font-size: 30px;
+}
+.info {
+    text-align: center;
+    list-style-type: none;
+    font-size: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 0px;
+}
+.contactotitle {
+    text-align: center;
+    display: flexbox;
+}
+.contactolist {
+    display: flexbox;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.row {
+    margin-right: 0px;
+}
+.logo {
+    display: flex;
+    padding-left: 10px;
+    animation-name: movimiento-logo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.25s;
+    animation-delay: .2s;
+}
+@keyframes movimiento-logo {
+    0% {
+        margin-top: -100px;
+    }
+    100% {
+        margin-top: 0.5px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navbar-toggler {
+        background-color: #7fb8e0;
+        border: solid #000000;
+        
+    }
+    .dest {
+        text-align: center;
+    }
+    .videodestacado {
+        width: 375px;
+        display: flex;
+        padding-left: 0px;
+    }
+    .row{
+        display: block;
+        flex-direction: row;
+        margin-right: 0px;
+    }
+    .adelanto {
+        padding-left: 10px;
+        display: block;
+    }
+    .duki {
+        padding-left: 70px;
+    }
+    .redes {
+        padding-left: 20px;
+    }
+    .foot {
+        padding-top: 10px;
+    }
+    .micanallist {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 425px) {
+    .videodestacado {
+        width: 425px;
+        
+    }
+    .navbar-toggler {
+        background-color: #7fb8e0;
+        border: solid #000000;
+    }
+    .redes {
+        padding-left: 20px;
+    }
+    .foot {
+        padding-top: 10px;
+    }
+    .micanallist {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 768px) {
+    .videodestacado {
+        width: 768px;
+        
+    }
+    .row {
+        text-align: center;
+    }
+    .micanallist {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .videodestacado {
+        width: 1024px;
+    }
+    .row {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .videodestacado {
+        width: 1444px;
+    }
+}
